@@ -1,1 +1,24 @@
-{}
+{
+    "calc-history":[
+        {
+            "inputValue":"10",
+            "askValue":"9.41",
+            "wantValue":"10.61"
+        },
+        {
+            "inputValue":"100",
+            "askValue":"96.80",
+            "wantValue":"103.30"
+        },
+        {
+            "inputValue":"1000",
+            "askValue":"970.70",
+            "wantValue":"1,030.18"
+        },
+        {
+            "inputValue":"10000",
+            "askValue":"9,709.70",
+            "wantValue":"10,298.97"
+        }
+    ]
+}

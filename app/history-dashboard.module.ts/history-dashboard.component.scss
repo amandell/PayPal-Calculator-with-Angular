@@ -1,0 +1,23 @@
+.history-table {
+    width: 100%;
+    float: left;
+    background-color: antiquewhite;
+    height: 100%;
+    text-align: left;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.history-header-row {
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 15px;
+    
+}
+
+.history-row {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}

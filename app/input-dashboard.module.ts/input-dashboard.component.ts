@@ -6,7 +6,7 @@ import { DataFormat } from './models/data.interface';
   selector: 'input-dashboard',
   styleUrls: ['input-dashboard.component.scss'],
   template: `
-    <div>
+    <div class="dashboard">
         Enter an amount: $
         <input 
             type="number" 

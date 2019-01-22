@@ -1,11 +1,21 @@
 .left {
     width: 50%;
-    float:left; /* add this */
+    float:left;
     text-align: center;
+    background-color: cyan;
+    opacity: 0.2;
+    line-height: 100px;
+    border-radius: 4px;
+    border: 1px solid cyan;
 }
 
 .right {
     width: 50%;
-    float:right; /* add this */
+    float:right;
     text-align: center;
+    background-color: lightgreen;
+    opacity: 0.2;
+    line-height: 100px;
+    border-radius: 4px;
+    border: 1px solid lightgreen;
 }

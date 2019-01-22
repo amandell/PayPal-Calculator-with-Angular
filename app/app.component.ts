@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   template: `
     <div class="app">
       <input-dashboard></input-dashboard>
+      <history-dashboard></history-dashboard>
     </div>
   `
 })
