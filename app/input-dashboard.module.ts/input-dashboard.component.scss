@@ -1,0 +1,16 @@
+.button {
+    background: green;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button:hover {
+    filter: brightness(125%);
+}
