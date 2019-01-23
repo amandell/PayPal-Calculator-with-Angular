@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpModule } from '@angular/http';
 
 // containers
 import { HistoryDashboardComponent } from './history-dashboard.component';
-
-// components
 
 
 @NgModule({
@@ -12,7 +11,8 @@ import { HistoryDashboardComponent } from './history-dashboard.component';
     HistoryDashboardComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    HttpModule
   ],
   exports: [
     HistoryDashboardComponent

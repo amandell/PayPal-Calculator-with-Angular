@@ -1,21 +1,26 @@
+.container-text {
+    color: black;
+    padding-left: 10px;
+}
+
 .left {
-    width: 50%;
+    width: 45%;
     float:left;
-    text-align: center;
+    text-align: left;
     background-color: cyan;
-    opacity: 0.2;
-    line-height: 100px;
+    line-height: 10px;
     border-radius: 4px;
-    border: 1px solid cyan;
+    border: 1px solid black;
+    height: 60px;
 }
 
 .right {
-    width: 50%;
+    width: 45%;
     float:right;
-    text-align: center;
+    text-align: left;
     background-color: lightgreen;
-    opacity: 0.2;
-    line-height: 100px;
+    line-height: 10px;
     border-radius: 4px;
-    border: 1px solid lightgreen;
+    border: 1px solid black;
+    height: 60px;
 }

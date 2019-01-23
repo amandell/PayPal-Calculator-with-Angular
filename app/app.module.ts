@@ -5,6 +5,9 @@ import { CommonModule } from '@angular/common';
 import { InputDashboardModule } from './input-dashboard.module.ts/input-dashboard.module';
 import { HistoryDashboardModule } from './history-dashboard.module.ts/history-dashboard.module';
 
+//service
+import { HistoryDashboardService } from './history-dashboard.module.ts/history-dashboard.service';
+
 
 import { AppComponent } from './app.component';
 
@@ -20,6 +23,9 @@ import { AppComponent } from './app.component';
     //custom modules
     InputDashboardModule,
     HistoryDashboardModule
+  ],
+  providers: [
+    HistoryDashboardService
   ],
   bootstrap: [AppComponent]
 })

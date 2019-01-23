@@ -1,24 +1,29 @@
 {
-    "calc-history":[
-        {
-            "inputValue":"10",
-            "askValue":"9.41",
-            "wantValue":"10.61"
-        },
-        {
-            "inputValue":"100",
-            "askValue":"96.80",
-            "wantValue":"103.30"
-        },
-        {
-            "inputValue":"1000",
-            "askValue":"970.70",
-            "wantValue":"1,030.18"
-        },
-        {
-            "inputValue":"10000",
-            "askValue":"9,709.70",
-            "wantValue":"10,298.97"
-        }
-    ]
+  "history": [
+    {
+      "inputValue": 100,
+      "askValue": 96.8,
+      "wantValue": 103.29557157569516
+    },
+    {
+      "inputValue": 200,
+      "askValue": 193.9,
+      "wantValue": 206.28218331616893
+    },
+    {
+      "inputValue": 100,
+      "askValue": 96.8,
+      "wantValue": 103.29557157569516
+    },
+    {
+      "inputValue": 100,
+      "askValue": 96.8,
+      "wantValue": 103.29557157569516
+    },
+    {
+      "inputValue": 400,
+      "askValue": 388.1,
+      "wantValue": 412.2554067971164
+    }
+  ]
 }

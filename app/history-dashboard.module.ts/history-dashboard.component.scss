@@ -1,23 +1,23 @@
 .history-table {
     width: 100%;
     float: left;
-    background-color: antiquewhite;
     height: 100%;
     text-align: left;
-    border: 1px solid black;
     border-collapse: collapse;
 }
 
 .history-header-row {
-    text-align: center;
-    border: 1px solid black;
-    border-collapse: collapse;
-    padding: 15px;
-    
+    background-color: rgb(144, 144, 252);
+    color: white;
+    text-align: left;
+    height: 40px;
+    font-weight: bold;
+    padding: 5px;
 }
 
 .history-row {
-    border: 1px solid black;
-    border-collapse: collapse;
-    padding: 10px;
+    height: 40px;
+    &:nth-child(odd) {
+        background-color: #f2f2f2;
+    }
 }

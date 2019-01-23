@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-import { DataFormat } from './models/data.interface';
+import { HistoryFormat } from '../history-dashboard.module.ts/models/history.interface';
+
+import { HistoryDashboardService } from '../history-dashboard.module.ts/history-dashboard.service';
 
 @Component({
   selector: 'input-dashboard',
@@ -15,37 +17,41 @@ import { DataFormat } from './models/data.interface';
         <button class="button" (click)="handleClick()">
             Calculate
         </button>
-        <div>
-            <ask-component
-                [calculate]="calculate"
-                [calculateData]="calculateData">
-            </ask-component>
-            <want-component
-                [calculate]="calculate"
-                [calculateData]="calculateData">
-            </want-component>
-        </div>
+    </div>
+    <div style="padding:20px 0px;">
+        <ask-component
+            [calculate]="calculate"
+            [calculateData]="calculateData">
+        </ask-component>
+        <want-component
+            [calculate]="calculate"
+            [calculateData]="calculateData">
+        </want-component>
     </div>
   `
 })
 export class InputDashboardComponent {
-    calculateData: DataFormat = {
-        enteredNum: 0,
+    calculateData: HistoryFormat = {
+        inputValue: 0,
         askValue: 0,
         wantValue: 0
     };
     calculate: boolean;
-    handleClick() {
-        this.calculateData.askValue = this.calculateData.enteredNum - (0.029 * this.calculateData.enteredNum + 0.3);
-        this.calculateData.wantValue = (this.calculateData.enteredNum + 0.3) / 0.971;
-        console.log(this.calculateData.askValue);
-        console.log(this.calculateData.wantValue);
 
-        if(this.calculateData.enteredNum > 0)
+    constructor(private historyService: HistoryDashboardService) {}
+
+    handleClick() {
+        this.calculateData.askValue = this.calculateData.inputValue - (0.029 * this.calculateData.inputValue + 0.3);
+        this.calculateData.wantValue = (this.calculateData.inputValue + 0.3) / 0.971;
+
+        if(this.calculateData.inputValue > 0)
             this.calculate = true;
+
+        this.historyService.postHistory(this.calculateData)
+        .subscribe();
     }
     handleInput(event: any) {
-        this.calculateData.enteredNum = event.target.valueAsNumber;
+        this.calculateData.inputValue = event.target.valueAsNumber;
     }
     handleFocus(event: any) {
         this.calculate = false;

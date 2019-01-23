@@ -7,7 +7,16 @@ import { DataFormat } from '../models/data.interface';
   styleUrls: ['components.scss'],
   template: `
     <div class="left" *ngIf="calculate==true">
-        If you ask for $ {{ calculateData.enteredNum | number: '1.2-2' }} , you'll receive $ {{ calculateData.askValue | number: '1.2-2'}}
+        <span class="container-text">
+          If you ask for 
+          <span style="font-weight:bold;">
+            $ {{ calculateData.inputValue | number: '1.2-2' }}
+          </span> 
+          , you'll receive 
+          <span style="font-weight:bold;">
+          $ {{ calculateData.askValue | number: '1.2-2'}}
+          </span>
+        </span>
     </div>
   `
 })
