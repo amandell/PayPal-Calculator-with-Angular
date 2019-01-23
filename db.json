@@ -1,29 +1,3 @@
 {
-  "history": [
-    {
-      "inputValue": 100,
-      "askValue": 96.8,
-      "wantValue": 103.29557157569516
-    },
-    {
-      "inputValue": 200,
-      "askValue": 193.9,
-      "wantValue": 206.28218331616893
-    },
-    {
-      "inputValue": 100,
-      "askValue": 96.8,
-      "wantValue": 103.29557157569516
-    },
-    {
-      "inputValue": 100,
-      "askValue": 96.8,
-      "wantValue": 103.29557157569516
-    },
-    {
-      "inputValue": 400,
-      "askValue": 388.1,
-      "wantValue": 412.2554067971164
-    }
-  ]
+  "history": []
 }
