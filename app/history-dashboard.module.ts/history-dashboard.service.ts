@@ -10,9 +10,7 @@ const HISTORY_API: string = '/api/history';
 
 @Injectable()
 export class HistoryDashboardService {
-    constructor(private http: Http) {
-        console.log('Http',this.http)
-    }
+    constructor(private http: Http) {}
 
     getHistory(): Observable<HistoryFormat[]> {
         return this.http
@@ -23,9 +21,7 @@ export class HistoryDashboardService {
     postHistory(history: HistoryFormat): Observable<HistoryFormat> {
         return this.http
         .post(HISTORY_API, history)
-        .map((response: Response) => {
-            return response.json();
-        });
+        .map((response: Response) => response.json());
     }
 
     clearHistory() {

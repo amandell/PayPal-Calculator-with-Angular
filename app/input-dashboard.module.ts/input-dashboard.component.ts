@@ -1,8 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 import { HistoryFormat } from '../history-dashboard.module.ts/models/history.interface';
 
 import { HistoryDashboardService } from '../history-dashboard.module.ts/history-dashboard.service';
+
+import { HistoryDashboardComponent } from '../history-dashboard.module.ts/history-dashboard.component';
 
 @Component({
   selector: 'input-dashboard',
@@ -38,7 +40,10 @@ export class InputDashboardComponent {
     };
     calculate: boolean;
 
-    constructor(private historyService: HistoryDashboardService) {}
+    @Output()
+    change: EventEmitter<any> = new EventEmitter();
+
+    constructor(private historyService: HistoryDashboardService, private historyDashboard: HistoryDashboardComponent) {}
 
     handleClick() {
         this.calculateData.askValue = this.calculateData.inputValue - (0.029 * this.calculateData.inputValue + 0.3);
@@ -48,7 +53,7 @@ export class InputDashboardComponent {
             this.calculate = true;
 
         this.historyService.postHistory(this.calculateData)
-        .subscribe();
+        .subscribe(() => this.change.emit());
     }
     handleInput(event: any) {
         this.calculateData.inputValue = event.target.valueAsNumber;

@@ -7,6 +7,7 @@ import { InputDashboardComponent } from './input-dashboard.component';
 // components
 import { AskComponent } from './components/ask-component';
 import { WantComponent } from './components/want-component';
+import { HistoryDashboardComponent } from '../history-dashboard.module.ts/history-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,9 @@ import { WantComponent } from './components/want-component';
   ],
   exports: [
     InputDashboardComponent
-  ]
+  ],
+  providers: [
+    HistoryDashboardComponent
+  ],
 })
 export class InputDashboardModule {}

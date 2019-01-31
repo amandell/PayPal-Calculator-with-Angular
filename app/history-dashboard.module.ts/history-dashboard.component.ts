@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Injectable, Input } from '@angular/core';
 
 import { HistoryFormat } from './models/history.interface';
 
@@ -25,7 +25,9 @@ import { HistoryDashboardService } from './history-dashboard.service';
     </div>
   `
 })
+@Injectable()
 export class HistoryDashboardComponent implements OnInit{
+    @Input()
     historyData: HistoryFormat[];
 
     constructor(private historyService: HistoryDashboardService) {}
@@ -34,4 +36,5 @@ export class HistoryDashboardComponent implements OnInit{
         this.historyService.getHistory()
         .subscribe((data: HistoryFormat[]) => this.historyData = data);
     }
+
 }
