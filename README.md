@@ -1,17 +1,6 @@
-<a href="https://ultimateangular.com" target="_blank"><img src="https://ultimateangular.com/assets/img/banners/ua-github.svg"></a>
+# PayPal Calculator
 
-# Angular Fundamentals Seed
-
-> This is the seed project for the [Angular Fundamentals](https://ultimateangular.com/courses/#angular-2) course by [Todd Motto](https://twitter.com/toddmotto).
-
-## Project Setup and Tooling
-
-### Tools
-
-This course is recorded with the following tools, you can optionally follow along using the same, or your favourite text editor/IDE and browser.
-
-*Text editor*: Visual Studio Code, you can [download it here](http://code.visualstudio.com) for both Mac, Windows and Linux.
-*Browser*: Google Chrome, you can [download it here](https://www.google.com/chrome)
+> This calculator was built while following a course by [Todd Motto](https://twitter.com/toddmotto) called [Angular Fundamentals](https://ultimateangular.com/courses/#angular-2). Most of the frameworks around the actual module itself was setup by Todd Motto as well as the setup instructions below and all credit is granted to him.
 
 ### Prerequisites
 
@@ -27,8 +16,6 @@ npm install -g node-sass
 ```
 
 ### Project Install
-
-To grab the seed project, either Fork this repo or [click here to download](https://github.com/UltimateAngular/angular-fundamentals-seed/archive/master.zip) the `.zip` folder and extract the files wherever you like on your machine.
 
 #### Step 1: Package Manager
 
